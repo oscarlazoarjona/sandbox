@@ -12,3 +12,8 @@ def castle():
 def bridge():
     """You shall not pass!"""
     print """You shall not pass!"""
+
+
+def archers():
+    """They hid the sun with the mass of their arrows."""
+    print """They hid the sun with the mass of their arrows."""
