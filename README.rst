@@ -8,14 +8,20 @@ Installing
 
 This package can be installed with the command
 
-pip install git+git://github.com/oscarlazoarjona/sandbox
+::
+
+    $ pip install git+git://github.com/oscarlazoarjona/sandbox
 
 To upgrade to the latest functionality use
 
-pip install git+git://github.com/oscarlazoarjona/sandbox --upgrade
+::
+
+    $ pip install git+git://github.com/oscarlazoarjona/sandbox --upgrade
 
 To uninstall use
 
-pip uninstall sandbox
+::
+
+    $ pip uninstall sandbox
 
 Enjoy!
