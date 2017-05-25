@@ -16,6 +16,6 @@ pip install git+git://github.com/oscarlazoarjona/sandbox --upgrade
 
 To uninstall use
 
-pip uninstall git+git://github.com/oscarlazoarjona/sandbox
+pip uninstall sandbox
 
 Enjoy!
