@@ -5,8 +5,13 @@ The place for tests.
 
 Installing
 --------
+This software requires pip and git to be installed. These can be installed as
+"Anaconda Python 2.7" and "GIT Version Control System" from the department's
+self-service application for Windows, or downloaded and manually installed from
+https://www.continuum.io/downloads and https://git-scm.com/downloads.
 
-This package can be installed with the command
+Once Anaconda and git are installed, the Python package sandbox can be
+installed with
 
 ::
 
