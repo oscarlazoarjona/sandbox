@@ -3,7 +3,8 @@ Sandbox
 
 The place for tests.
 
-# Installing
+Installing
+--------
 
 This package can be installed with the command
 
