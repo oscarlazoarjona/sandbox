@@ -7,3 +7,8 @@
 def castle():
     """There is not enough sand in the world."""
     print "There is not enough sand in the world."
+
+
+def bridge():
+    """You shall not pass!"""
+    print """You shall not pass!"""
