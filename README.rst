@@ -1,4 +1,6 @@
-# sandbox
+Sandbox
+=====
+
 The place for tests.
 
 # Installing
