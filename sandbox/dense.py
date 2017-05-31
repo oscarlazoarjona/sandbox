@@ -4854,7 +4854,8 @@ Ndelta = 800
 E0 = [27.840415737090957]
 
 delta0 = 2473.0099230109486
-deltaf = delta0 + 60*2*np.pi
+deltaf = delta0 + 120*2*np.pi
+delta0 = -30*2*np.pi
 delta = np.linspace(delta0, deltaf, Ndelta)
 
 mu1 = Mu(8, 8, 1, Ne)
@@ -4877,6 +4878,7 @@ plt.plot(delta/2/np.pi, rhog, "b-", label=r"$\rho_{gg}$")
 plt.plot(delta/2/np.pi, rhoe, "r-", label=r"$\rho_{ee}$")
 plt.xlabel(r"$\nu \ (\mathrm{MHz})$", fontsize=fs)
 plt.ylabel(r"$\mathrm{population}$", fontsize=fs)
+plt.ylim([0, 1])
 plt.legend(fontsize=fs)
 plt.savefig("two_levels.png", bbox_inches="tight")
 
