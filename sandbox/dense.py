@@ -5,11 +5,11 @@ r"""An example on solving sparse systems of equations."""
 
 import numpy as np
 from time import time
-from scipy import sparse
+# from scipy import sparse
 from scipy import linalg
-from scipy.sparse.linalg import spsolve
+# from scipy.sparse.linalg import spsolve
 from fast import Mu
-
+from matplotlib import pyplot as plt
 
 def solve_system(E0, detuning_knob):
     r"""The parameters of the system."""
@@ -4850,7 +4850,7 @@ def solve_system(E0, detuning_knob):
 
 
 Ne = 24
-Ndelta = 8000
+Ndelta = 800
 E0 = [27.840415737090957]
 
 delta0 = 2473.0099230109486
@@ -4871,6 +4871,14 @@ for i in range(Ndelta):
     rhog[i] = x[mu1-1]
     rhoe[i] = x[mu2-1]
 print time()-t0
+
+fs = 25
+plt.plot(delta/2/np.pi, rhog, "b-", label=r"$\rho_{gg}$")
+plt.plot(delta/2/np.pi, rhoe, "r-", label=r"$\rho_{ee}$")
+plt.xlabel(r"$\nu \ (\mathrm{MHz})$", fontsize=fs)
+plt.ylabel(r"$\mathrm{population}$", fontsize=fs)
+plt.legend(fontsize=fs)
+plt.savefig("two_levels.png", bbox_inches="tight")
 
 # [  2.48337592e-04]
 #  [ -0.00000000e+00]
